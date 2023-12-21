@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Github District</title>
+    <meta property="twitter:url" content="http://gg.chendahai.cn/static/share/index.html"/>
+    <meta name="twitter:title" content="This is title"/>
+    <meta name="twitter:description" content="This is desc"/>
+    <meta name="twitter:site" content="http://gg.chendahai.cn/static/share/index.html">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="http://gg.chendahai.cn/static/image/apple.jpg"/>
+    <style>
+        html,
+        body {
+            background: #000;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+
+        main {
+            transition: all 0.5s;
+            -webkit-text-stroke: 2px #d6f4f4;
+            font-variation-settings: "wght" 900, "ital" 1;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 10px 10px 0px #07bccc,
+                15px 15px 0px #e601c0,
+                20px 20px 0px #e9019a,
+                25px 25px 0px #f40468,
+                30px 30px 10px #482896;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.142.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.142.0/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.142.0/examples/js/geometries/TextGeometry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div
+        style="position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);text-align: center;font-size: 40;color:rgba(255,255,255,.7);text-shadow:0px 0px 2px #fff;padding:10px 0px;pointer-events: none;">
+        <main id='userName' style="font-size: 56px;"></main>
+        <main style="font-size: 92px;">Github City</main>
+        <main id='dataYear' style="font-size: 76px;"></main>
+    </div>
+    <div id="container"></div>
+</body>
+
+</html>
